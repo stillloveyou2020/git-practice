@@ -2,7 +2,7 @@
 library(ggplot2)
 
 # Read the dataset
-data <- read.csv('path/to/fake_employee_data.csv')
+data <- read.csv('https://raw.githubusercontent.com/stillloveyou2020/git-practice/main/fake_employee_data.csv')
 
 # View the first few rows of the dataset
 head(data)
