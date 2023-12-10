@@ -1,0 +1,20 @@
+# Load necessary libraries
+library(ggplot2)
+
+# Read the dataset
+data <- read.csv('path/to/fake_employee_data.csv')
+
+# View the first few rows of the dataset
+head(data)
+
+# Basic summary of the data
+summary(data)
+
+# A simple plot: Distribution of Ages
+ggplot(data, aes(x=Age)) + 
+    geom_histogram(binwidth=1, fill="blue", color="black") +
+    ggtitle("Distribution of Employee Ages") +
+    xlab("Age") +
+    ylab("Frequency")
+
+# Remember to change 'path/to/fake_employee_data.csv' to the actual path where the dataset is stored
